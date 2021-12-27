@@ -1,0 +1,14 @@
+# 3.0 Understanding State
+
+    - 어려운 방식으로 한번 서술할 것. 
+    - count를 올려도 작동하지 않음. 
+    -> 랜더링은 처음 한번만 작동하기 때문에. 
+    -> function call 때마다 랜더링을 계속해주면 됨. 
+
+    - 쉽게 하는 방법. 
+     - 다음 챕터에서 더 설명할 것. 
+
+    - vanilla js vs react js 
+     - 개발자 도구를 통해 업데이트되는 부분을 보면 알 수 있음. 
+     - vanilla js는 span 전체가 업데이트되는데 반해
+     - react js는 숫자 부분만 업데이트된다.
