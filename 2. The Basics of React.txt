@@ -1,0 +1,65 @@
+# 2.1 Before React
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <span>Total clicks: 0</span>
+        <button id="btn">Click me</button>
+        <script>
+            let counter = 0; 
+            const button = document.querySelector("#btn");
+            const span = document.querySelector("span"); 
+            function handleClick() {
+                counter++; 
+                span.innerText = `Total clicks: ${counter}`; 
+            }
+            button.addEventListener("click", handleClick); 
+        </script>
+    </body>
+</html>
+
+    기존 코드로는 필요로하는 코드가 너무 길다. 
+    이 모든 것을 커버하기 위해 react가 사용된다면? 
+
+    react를 위해서는 react와 react-dom이 필요로 함. 
+
+# 2.2 Our First React Element
+
+    <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+            <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+
+    어떻게 react가 추가 된 것인지를 자세히 모르겠다. 조금 더 찾아볼 필요가 있음. 
+    - React JS : 엔진
+    - react-dom : React Element와 html과 엮어주는 역활
+
+    ** 일부러 어려운 방식으로 코드를 짜고 있으니 유의할 것. 
+
+    요점 : 
+        원래 HTML에 추가한 이후 JavaScript에서 수정
+        react에서 추가 이후 HTML에 추가한
+
+# 2.3 Event in React
+
+    - eventListener를 직접 추가함. 
+
+# 2.4 Reacp
+
+# 2.5 JSX
+
+ - React Element 만드는 입장에서는 훨씬 편하게 만들어줌. 
+ - 브라우저가 이해하지 못하기에 변환이 필요함. 
+  -> Babel으로 변환. 
+ - Babelstandalone : 이전에 우리가 힘들게 친 코드가 바벨과 동일함. 
+
+# 2.6 JSX part Two
+
+ - 컴포넌트의 첫 글자는 무조건 대문자로 할 것. 
+  -> 그렇지 않으면 그냥 태그가 되어버린다. 
+ - arrow function을 사용하는 이유는 this에서의 차이가 가장 크다. 
+  -> arrow function을 사용하면 instance을 값을 불러온다. 
+
+
+
