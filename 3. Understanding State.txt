@@ -44,9 +44,14 @@
 
 # 3.6 State Practice part One
 
- - onChange를 지워버리면 value가 minutes에 엮어있기에 아무리 변화를 줘도 
+    - onChange를 지워버리면 value가 minutes에 엮어있기에 아무리 변화를 줘도 
  값이 변화하지 않는다. 
 
 # 3.7 State Practice part Two
 
- - flipped라는 값을 추가하여 변환과 disabled에 대한 부분을 자유롭게 움직이게 함. 
+    - flipped라는 값을 추가하여 변환과 disabled에 대한 부분을 자유롭게 움직이게 함. 
+
+ # 3.8, 3.9 Recap
+
+  - {}를 사용하지 않으면 단어로 인식되니 잘 사용할 것. 
+
