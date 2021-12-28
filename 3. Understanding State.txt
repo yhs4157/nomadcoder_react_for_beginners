@@ -12,3 +12,19 @@
      - 개발자 도구를 통해 업데이트되는 부분을 보면 알 수 있음. 
      - vanilla js는 span 전체가 업데이트되는데 반해
      - react js는 숫자 부분만 업데이트된다.
+
+# 3.1 setState part One
+
+    - 문제점 : 데이터 변경 시마다 render을 콜할 것이냐? 
+    - React.setState()을 반환은 [value, function]으로 이루어져 있다.
+    - 그에 맞추어 const [value, function] = React.setState();로 형성
+
+# 3.2 setState part Two
+
+ - setState()에서 제공되는 함수를 사용하지 않으면 랜더링이 제공되지 않음. 
+ - 수는 수정하다. const를 let으로 변경한 뒤, 랜더링은 수동으로 돌려야한다. 
+ - 결국 위의 기능을 한 번에 처리하는 것이 setState[1]에 기능. 
+
+# 3.3 Recap
+
+# 3.4 
