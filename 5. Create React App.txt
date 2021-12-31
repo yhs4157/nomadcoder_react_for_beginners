@@ -1,0 +1,28 @@
+# 5.0 Introduction
+
+ - create-react-app에 대한 좋은 부분을 서술
+ - nodejs에 대한 부분도 서술됨.
+
+
+ **** 처리 중 일어난 에러사항
+  - You are running `create-react-app` 즉 나에게 존재하는 해당 버전이 너무 낮아
+  더 이상 서비스를 하지 않는다는 것. npm에 존재하는 create-react-app을 제거하고 새로 만
+  들어야 작동한다. 
+  
+  https://wotres.tistory.com/entry/create-react-app-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8-%ED%95%98%EB%8A%94-%EB%B2%95
+  도움을 받은 홈페이지 npm create-react-app 업데이트를 도와줌
+  
+  npm install -g create-react-app
+
+*** npm vs npx 
+ - npm은 node Package manager
+ - npx은 node package executer
+
+ - npm은 버전의 유지관리한다 그렇기에 버전이 여러가지 갈래로 벌어지는데 반해
+ npx는 작동만 중시하기에 버전은 관리 않고 가장 최신의 버전만 들고 온다. 
+
+ git에 다 올리지 않고 바뀌는 부분만 올리면서 상황을 계속 주시하자. 
+
+ 나머지는 react for beginners2로 진행
+ 
+
