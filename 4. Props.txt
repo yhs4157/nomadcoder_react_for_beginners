@@ -1,0 +1,51 @@
+# 4.0 Props
+
+    - 이전 강의에서 한 분할, 정복 -> 캡슐화의 중요성 서술
+    - 컴포넌트 단위로 나누는 것을 한번 더 강조함. 
+
+    - 컴포넌트에서 상위 컴포넌트의 데이터를 필요로 할 떄 사용한다. 
+    - 일종의 데이터 통신방식
+    - style을 일일히 복사 붙여넣기를 하는 대신 글자만 넣으면 작동하는 형태로 만든다.(design pattern에서 factory에 해당)
+
+    - 함수가 대문자가 아니면 인식되지 않는다. -> 유의할 것. 
+    - 함수에 parameter를 받음. 
+    - parameter로 받아지는 값은 object로 들어가게 됨. 
+        -> 그래서 뒤에 띄워쓰기를 추가하면서 object를 더할 수 있음. 
+        -> 사람들은 props 대신에 {variable}를 많이 사용(더 직관적이기 떄문에). 
+    - 이해하기 힘들 경우 consolg.log()를 통해 직접 확인해도 좋음. 
+
+# 4.1 Memo
+
+ - Btn에 추가한 것은 이벤트 리스너가 아닌 props로 전달하는 내용일 뿐이다. 
+    ex) <Btn text={value} onClick={changeValue} /> in App
+
+ - console.log()를 통해서 해당 데이터의 리랜더링을 확인하면 좋음.
+    -> 리액트의 특성을 크게 확인할 수 있음. 
+    -> onClick을 통해 re-rendering을 확인하면 text가 변화하는 save이외에 
+    continue도 re-rendering된다. 
+
+ - 해당 문제를 방지하기 위해 Memo를 사용한다. 
+    ex) 
+        const MemorizedBtn = React.memo(Btn);
+        <MemorizedBtn text={value} onClick={changeValue} />
+    -> 문제가 되었던 값을 고칠 때 수정되는 문제를 해결함. 
+
+ - 부모 컴포넌트에서의 state 변경이 자식 컴포넌트 변경으로 이어진다. 
+    -> 해결책 : React.memo(); 
+
+# 4.2 Prop Types
+
+ - 많은 내용을 props로 보낼 때 문제가 생김. 
+ ex) 
+    <Btn text={"save Change"} fontsize={18} />
+    <Btn text={18} fontsize={"save Change"} />
+ - propType도 console를 통해서 알아낼 수 있음. 
+ - console에 propType를 쳐서 직접 접근할 수 있음. 
+
+ - 단순히 string, number를 넘어 인스턴스인지 혹은 required 등 많은 부분에 걸쳐 있음. 
+
+ - default 설정도 가능함. javascript 기능
+
+# 4.3 Recap
+
+ - PropType의 알림은 에러경고이지 작동을 막지는 않음. 
